@@ -7,3 +7,4 @@
 如果在github的remote上已经有了文件，会出现错误。此时应当先pull，即：git pull origin master
 然后 git push -u origin master，如果还是出现错误
 像这样的error: failed to push some refs to 可以尝试把git push -u origin master改成git push -f origin master
+git push -f origin master 会清空远程仓库上原有的文件，然后推你现在推的文件
