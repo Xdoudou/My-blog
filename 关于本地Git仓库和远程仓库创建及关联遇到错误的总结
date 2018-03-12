@@ -1,0 +1,9 @@
+新建一个远程空仓库
+在本地新建一个文件夹，用个git init 初始化本地仓库（命令终端处在当前目录下）
+把文件添加到本地git缓存处： git add 文件名
+把文件修改日志提交到仓库： git commit -m "修改日志"
+关联新建的远程仓库： git remote add origin git@github.com:*****/*****.git
+将修改推送到远程仓库： git push -u origin master
+如果在github的remote上已经有了文件，会出现错误。此时应当先pull，即：git pull origin master
+然后 git push -u origin master，如果还是出现错误
+像这样的error: failed to push some refs to 可以尝试把git push -u origin master改成git push -f origin master
